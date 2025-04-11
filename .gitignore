@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+*.env
+
+# VSCode
+.vscode/
+
+# Django
+db.sqlite3
+*.pot
+*.pyc
+
+# Node
+node_modules/
+
+# React
+build/
+.env.local
+.env.development
+.env.production
