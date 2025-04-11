@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AllergyBuster</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f8fc;
+      color: #2c3e50;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #ffffff;
+      border-bottom: 1px solid #e1e1e1;
+    }
+
+    header .logo {
+      font-weight: bold;
+      color: #3a5ea7;
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a.active {
+      color: #3a5ea7;
+    }
+
+    .auth-buttons button {
+      margin-left: 0.5rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .login {
+      background-color: #e0e7ff;
+      color: #3a5ea7;
+    }
+
+    .signup {
+      background-color: #3a5ea7;
+      color: white;
+    }
+
+    .hero {
+      text-align: center;
+      background: linear-gradient(to right, #e0e7ff, #f1f5ff);
+      padding: 4rem 1rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      margin-bottom: 2rem;
+      color: #555;
+    }
+
+    .search-bar {
+      display: flex;
+      justify-content: center;
+    }
+
+    .search-bar input {
+      padding: 0.75rem;
+      width: 50%;
+      border: 1px solid #ccc;
+      border-radius: 25px 0 0 25px;
+      outline: none;
+    }
+
+    .search-bar button {
+      padding: 0.75rem 1.5rem;
+      background-color: #3a5ea7;
+      color: white;
+      border: none;
+      border-radius: 0 25px 25px 0;
+      cursor: pointer;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .tabs div {
+      margin: 0 1rem;
+      padding: 1rem;
+      cursor: pointer;
+      font-weight: bold;
+      color: #3a5ea7;
+    }
+
+    .tabs .active-tab {
+      border-bottom: 2px solid #3a5ea7;
+    }
+
+    .content {
+      padding: 2rem;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #3a5ea7;
+      color: white;
+      padding: 1rem;
+      border-radius: 10px;
+      width: 250px;
+    }
+
+    .card ul {
+      margin: 0;
+      padding-left: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">🖐️ AllergyBuster</div>
+    <nav>
+      <a href="#" class="active">Dashboard</a>
+      <a href="#">Symptom Checker</a>
+      <a href="#">Medications</a>
+      <a href="#">Allergy Diary</a>
+      <a href="#">Scanner</a>
+      <a href="#">Telehealth</a>
+    </nav>
+    <div class="auth-buttons">
+      <button class="login">Login</button>
+      <button class="signup">Sign Up</button>
+    </div>
+  </header>
+
+  <div class="hero">
+    <h1>Comprehensive Allergy Management</h1>
+    <p>Identify, treat, and manage your allergies with our complete toolkit</p>
+    <div class="search-bar">
+      <input type="text" placeholder="Describe your symptoms or search medications..." />
+      <button onclick="alert('Search triggered')">Search</button>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <div class="active-tab">Allergy Types</div>
+    <div>Medication Finder</div>
+    <div>Local Alerts</div>
+    <div>First Aid</div>
+  </div>
+
+  <div class="content">
+    <h2>Common Allergy Types</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Pollen Allergy</h3>
+        <ul>
+          <li>Seasonal Allergic Rhinitis</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Food Allergy</h3>
+        <ul>
+          <li>Common Food Allergens</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Dust Mite Allergy</h3>
+        <ul>
+          <li>Perennial Allergic Rhinitis</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
