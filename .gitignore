@@ -5,19 +5,28 @@ __pycache__/
 *.log
 *.env
 
-# VSCode
+# VS Code
 .vscode/
 
 # Django
 db.sqlite3
 *.pot
 *.pyc
+staticfiles/
 
-# Node
+# Node.js
 node_modules/
+npm-debug.log*
 
 # React
 build/
 .env.local
 .env.development
 .env.production
+
+# Firebase secret
+*.json
+
+# OS files
+.DS_Store
+Thumbs.db
